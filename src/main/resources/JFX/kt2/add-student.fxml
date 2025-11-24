@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="300" prefWidth="400" spacing="10" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JFX.kt2.AddStudentController">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <Label text="ФИО студента:" />
+    <TextField fx:id="fioField" promptText="Иван Иванов" />
+
+    <Label text="Группа:"/>
+    <ChoiceBox fx:id="groupChoiceBox"/>
+
+
+    <Label text="Оценки:" />
+    <ScrollPane fitToWidth="true" VBox.vgrow="ALWAYS">
+        <VBox fx:id="gradesContainer" spacing="5" />
+    </ScrollPane>
+
+    <HBox alignment="CENTER_RIGHT" spacing="10">
+        <Button defaultButton="true" onAction="#handleAdd" text="Добавить" />
+        <Button onAction="#handleCancel" text="Отмена" />
+    </HBox>
+</VBox>

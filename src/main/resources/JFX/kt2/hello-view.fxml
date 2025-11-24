@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JFX.kt2.HelloController">
+    <children>
+        <MenuBar>
+            <menus>
+                <Menu mnemonicParsing="false" text="Меню">
+                    <items>
+                        <MenuItem fx:id="addStudentMenuItem" mnemonicParsing="false" text="Добавить студента" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Настройки">
+                    <items>
+                        <MenuItem fx:id="settingsMenuItem" mnemonicParsing="false" text="Изменить количество заданий" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem fx:id="helpMenuItem" mnemonicParsing="false" text="О приложении" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <TableView fx:id="mainTable" VBox.vgrow="ALWAYS" />
+    </children>
+</VBox>
